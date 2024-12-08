@@ -1,0 +1,12 @@
+docker build -t notepad .
+
+docker login
+
+xhost +local:docker
+
+docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v $HOME/.Xauthority:/root/.Xauthority -v /etc/localtime:/etc/localtime:ro notepad
+
+
+
+docker tag notepad dhlongvu/notepad
+docker push dhlongvu/notepad
