@@ -58,7 +58,9 @@ edit_menu.add_command(label="Định dạng văn bản", command=format_text)
 edit_menu.add_command(label="Đếm từ", command=word_count)
 edit_menu.add_command(label="Tìm kiếm văn bản", command=search_text)
 menu_bar.add_cascade(label="Chỉnh sửa", menu=edit_menu)
-
+help_menu = tk.Menu(menu_bar, tearoff=0)
+help_menu.add_command(label="Thông tin", command=about)
+menu_bar.add_cascade(label="Trợ giúp", menu=help_menu)
 
 
 text.tag_configure("search", background="yellow")
