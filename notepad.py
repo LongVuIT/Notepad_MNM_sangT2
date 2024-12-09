@@ -58,7 +58,7 @@ edit_menu.add_command(label="Định dạng văn bản", command=format_text)
 edit_menu.add_command(label="Đếm từ", command=word_count)
 edit_menu.add_command(label="Tìm kiếm văn bản", command=search_text)
 menu_bar.add_cascade(label="Chỉnh sửa", menu=edit_menu)
-
+#123
 
 
 text.tag_configure("search", background="yellow")
