@@ -53,8 +53,8 @@ file_menu.add_command(label="Mở", command=open_file)
 file_menu.add_command(label="Lưu", command=save_file)
 menu_bar.add_cascade(label="Tệp", menu=file_menu)
 
-#edit_menu = tk.Menu(menu_bar, tearoff=0)
-#edit_menu.add_command(label="Định dạng văn bản", command=format_text)
+edit_menu = tk.Menu(menu_bar, tearoff=0)
+edit_menu.add_command(label="Định dạng văn bản", command=format_text)
 
 
 text.tag_configure("search", background="yellow")
